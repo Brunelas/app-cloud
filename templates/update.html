@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Usuário</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Atualizar Usuário</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" class="form-control" id="name" name="name" value="{{ user.name }}" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary mt-4">Voltar</a>
+    </div>
+</body>
+</html>
